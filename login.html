@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h2>Đăng nhập</h2>
+        </div>
+        <form class="form" onsubmit="validateLogin(event)">
+            <div class="form-control">
+                <label for="sdt">Tài khoản</label>
+                <input type="text" placeholder="Nhập tài khoản của bạn" id="username">
+            </div>
+            <div class="form-control">
+                <label for="mk">Mật khẩu</label>
+                <input type="password" placeholder="******" id="password">
+            </div>
+            <div class="button">
+                <a href="#" onclick="validateLogin(event)">Xác nhận</a>
+            </div>
+            <p>
+                Bạn chưa có tài khoản? Đăng ký <a href="register.html">tại đây</a>
+            </p>
+        </form>
+    </div>
+
+    <script>
+        function validateLogin(event) {
+            event.preventDefault(); // Ngăn chặn hành động mặc định của liên kết
+
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username === 'hoanganh' && password === '123456') {
+                window.location.href = 'index.html'; // Chuyển hướng đến trang index.html
+            } else {
+                alert('Tên đăng nhập hoặc mật khẩu không đúng!                                 TK: hoanganh   MK: 123456');
+            }
+        }
+    </script>
+</body>
+
+</html>

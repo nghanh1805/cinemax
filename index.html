@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UTCinema</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Begin header -->
+  <header>
+    <nav class="navbar">
+      <a class="navbar-brand" href="#"><img src="images/logofixed.png" alt="UTCinema"></a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">TRANG CHỦ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ticket.html">ĐẶT VÉ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">THÀNH VIÊN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">TUYỂN DỤNG</a>
+        </li>
+      </ul>
+      <div class="searchbox">
+        <input type="text" placeholder="Tìm kiếm" class="search">
+      </div>
+      <ul class="llogin">
+        <li class="login-container">
+          <a href="#">CHÀO MỪNG BẠN !</a>
+        </li>
+        <li class="login-container">
+          <a href="login.html">ĐĂNG XUẤT</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- End header -->
+  <!-- Begin section -->
+  <section>
+    <!-- PHIM HOT -->
+    <h2 class="title">PHIM NỔI BẬT</h2>
+    <div id="slider">
+      <div class="slideshow-container">
+        <div class="mySlides fade"><a href="#"><img src="images/QC/QC_1.jpg" style="width:100%; height: 100%;"></a>
+        </div>
+        <div class="mySlides fade"><a href="#"><img src="images/QC/QC_2.jpg" style="width:100%; height: 100%;"></a>
+        </div>
+        <div class="mySlides fade"><a href="#"><img src="images/QC/QC_3.jpg" style="width:100%; height: 100%;"></a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+        slideIndex++;
+        setTimeout(showSlides, 2500);
+      }
+    </script>
+
+
+    <!-- PHIM ĐANG CHIẾU -->
+    <h2 class="title">PHIM ĐANG CHIẾU</h2>
+    <div class="container-home">
+      <!--  -->
+      <div class="movie">
+        <div>
+          <a class="imglink" href="BDTS.html">
+            <img src="images/PHIMDANGCHIEU/BDTS.jpg" alt="bongdungtrungso" class="rounded-image">
+          </a>
+        </div>
+        <div class="infor">
+          <b>BỖNG DƯNG TRÚNG SỐ</b></a><br><br>
+        </div>
+        <a href="ticket.html" class="ticket-link">
+          <i class="ticket"> ĐẶT VÉ</i>
+        </a>
+      </div>
+      <!--  -->
+      <div class="movie">
+        <div>
+          <a class="imglink" href="BLACKPANTHER.html">
+            <img src="images/PHIMDANGCHIEU/BLACKPANTHER.jpg" alt="blackpanther" class="rounded-image">
+          </a>
+        </div>
+        <div class="infor">
+          <b>BLACK PANTHER</b></a><br><br>
+        </div>
+        <a href="ticket.html" class="ticket-link">
+          <i class="ticket"> ĐẶT VÉ</i>
+        </a>
+      </div>
+      <!--  -->
+      <div class="movie">
+        <div>
+          <a class="imglink" href="COGAITQK.html">
+            <img src="images/PHIMDANGCHIEU/CGTQK.jpg" alt="cogaituquakhu" class="rounded-image">
+          </a>
+        </div>
+        <div class="infor">
+          <b>CÔ GÁI TỪ QUÁ KHỨ</b></a><br><br>
+        </div>
+        <a href="ticket.html" class="ticket-link">
+          <i class="ticket"> ĐẶT VÉ</i>
+        </a>
+      </div>
+      <!--  -->
+      <div class="movie">
+        <div>
+          <a class="imglink" href="HPM.html">
+            <img src="images/PHIMDANGCHIEU/HANHPHUCMAU.jpg" alt="hanhphucmau" class="rounded-image">
+          </a>
+        </div>
+        <div class="infor">
+          <b>HẠNH PHÚC MÁU</b></a><br><br>
+        </div>
+        <a href="ticket.html" class="ticket-link">
+          <i class="ticket"> ĐẶT VÉ</i>
+        </a>
+      </div>
+      <!--  -->
+      <div class="movie">
+        <div>
+          <a class="imglink" href="MQD.html">
+            <img src="images/PHIMDANGCHIEU/MOIQUYDU.jpg" alt="moiquydu" class="rounded-image">
+          </a>
+        </div>
+        <div class="infor">
+          <b>MỒI QUỶ DỮ</b></a><br><br>
+        </div>
+        <a href="ticket.html" class="ticket-link">
+          <i class="ticket"> ĐẶT VÉ</i>
+        </a>
+      </div>
+      <!--  -->
+      <div class="movie">
+        <div>
+          <a class="imglink" href="NTC.html">
+            <img src="images/PHIMDANGCHIEU/NTC.jpg" alt="nghithuccam" class="rounded-image">
+          </a>
+        </div>
+        <div class="infor">
+          <b>NGHi THỨC CẤM</b></a><br><br>
+        </div>
+        <a href="ticket.html" class="ticket-link">
+          <i class="ticket"> ĐẶT VÉ</i>
+        </a>
+      </div>
+      <!--  -->
+      <div class="movie">
+        <div>
+          <a class="imglink" href="PLAY.html">
+            <img src="images/PHIMDANGCHIEU/PLAY.jpg" alt="Play" class="rounded-image">
+          </a>
+        </div>
+        <div class="infor"><b>PLAY</b></a><br><br>
+        </div>
+        <a href="ticket.html" class="ticket-link">
+          <i class="ticket"> ĐẶT VÉ</i>
+        </a>
+      </div>
+      <!--  -->
+      <div class="movie">
+        <div>
+          <a class="imglink" href="THOR.html">
+            <img src="images/PHIMDANGCHIEU/THOR.jpg" alt="thor" class="rounded-image">
+          </a>
+        </div>
+        <div class="infor">
+          <b>THOR</b></a><br><br>
+        </div>
+        <a href="ticket.html" class="ticket-link">
+          <i class="ticket"> ĐẶT VÉ</i>
+        </a>
+      </div>
+  </section>
+  <!-- End section -->
+  <!-- Footer -->
+  <footer class="page-footer ">
+    <!-- Footer Links -->
+    <div class="footer-ctn ">
+      <!-- Grid row -->
+      <div class="row ">
+        <!-- Grid column -->
+        <div>
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">Quy định và điều khoản:</h6>
+          <hr class="line" style="width: 140px; height: 2px;">
+          <a href="#">
+            <p>Điều khoản</p>
+          </a>
+          <a href="#">
+            <p>Quy định thành viên</p>
+          </a>
+          <a href="#">
+            <p>Chính sách bảo mật</p>
+          </a>
+          <a href="#">
+            <p>Hướng dẫn mua vé trực tuyến</p>
+          </a>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div>
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Thanh toán:</h6>
+          <hr class="line" style="width: 110px; height:2px;">
+          <p>
+            <a href="#!"><img src="images/footer/logo-visa.png" alt="visa"></a>
+            <a href="#!"><img src="images/footer/logo-master.png" alt="master"></a>
+          </p>
+          <p>
+            <a href="#!"><img src="images/footer/logo-samsungpay.png" alt="samsungpay"></a>
+            <a href="#!"><img src="images/footer/logo-atm.png" alt="atm"></a>
+          </p>
+          <p>
+            <a href="#!"><img src="images/footer/logo-vnpay.png" alt="vnpay"></a>
+            <a href="#!"><img src="images/footer/logo-jcb.png" alt="jcb"></a>
+          </p>
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div>
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Thông tin liên hệ:</h6>
+          <hr class="line" style="width: 160px; height: 2px;">
+          <p>
+            20c 144/8 Quan Nhân - Thanh Xuân - Hà Nội
+          </p>
+          <p>
+            anhltvp2003@gmail.com
+          </p>
+          <p>
+            +84 915 192 289
+          </p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </footer>
+  <!-- Footer -->
+</body>
+
+</html>
